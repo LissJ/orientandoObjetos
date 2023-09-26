@@ -44,7 +44,7 @@ class Calculadora{
     }
 
     limpar(){
-        this.valor = 0;
+        this.valor = '0';
         this.atualizarVisor();
     }
 
