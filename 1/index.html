@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Pessoa {
+            constructor(nome, idade) {
+                this.nome = nome;
+                this.idade = idade;
+            }
+            // MÉTODO PARA IMPRIMIR OS DADOS DA PESSOA
+            imprimirDados() {
+                console.log(`Nome: ${this.nome}, Idade: ${this.idade}`);
+            }
+        }
+        
+        // CRIANDO UM OBJETO pessoa1 DA CLASSE Pessoa
+        let pessoa1 = new Pessoa('Liss', 16)
+
+        // CHAMANDO O MÉTODO imprimirDados DO OBJETO Pessoa
+        pessoa1.imprimirDados()
+    </script>
+</body>
+
+</html>

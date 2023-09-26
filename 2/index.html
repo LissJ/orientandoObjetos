@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcJá!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="nome">
+                <h1>
+                    CalcJá!
+                </h1>
+            </div>
+        </div>
+        <div>
+            <h2 class="subtitulo">
+                Calcule com conforto
+            </h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <div class="conteudo">
+                <h2 class="titulo">
+                    CALCULE JÁ
+                </h2>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fuga, aliquid labore, vero
+                    placeat temporibus cum modi sapiente similique ex recusandae iure. Obcaecati iure illo quae
+                    eveniet pariatur quisquam asperiores!
+                </p>
+            </div>
+        </section>
+
+        <!-- container principal da calculadora -->
+        <div class="container">
+            <!-- visor onde serão exibidos os números e resultados -->
+            <input type="text" id="visor" disabled>
+            <!-- teclado da calculadora -->
+            <div class="teclado">
+
+                <!-- botões para os números -->
+                <button class="numero" onclick="calculadora.adicionarNumero('7')">7</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('8')">8</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('9')">9</button>
+                <!-- botão para a operação de divisão -->
+                <button class="operacao" onclick="calculadora.adicionarOperacao('/')">/</button>
+
+                <button class="numero" onclick="calculadora.adicionarNumero('4')">4</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('5')">5</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('6')">6</button>
+                <button class="operacao" onclick="calculadora.adicionarOperacao('*')">*</button>
+
+                <button class="numero" onclick="calculadora.adicionarNumero('1')">1</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('2')">2</button>
+                <button class="numero" onclick="calculadora.adicionarNumero('3')">3</button>
+                <button class="operacao" onclick="calculadora.adicionarOperacao('-')">-</button>
+
+                <button class="numero" onclick="calculadora.adicionarNumero('0')">0</button>
+                <button class="operacao" onclick="calculadora.limpar()">C</button>
+                <button class="operacao" onclick="calculadora.adicionarOperacao('+')">+</button>
+                <button class="operacao" onclick="calculadora.resultado()">=</button>
+
+                <script src="main.js"></script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="palavras">
+                <h3 class="rodCalc">
+                    CalcJá
+                </h3>
+                <aside>
+                    <h4 class="rodCall">
+                        Sua melhor calculadora online!
+                    </h4>
+                </aside>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
